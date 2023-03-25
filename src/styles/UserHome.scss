@@ -1,0 +1,164 @@
+body,
+.iziToast {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+::placeholder {
+    font-size: 0.9rem;
+}
+
+#file-check {
+    display: flex;
+    flex-direction: column;
+}
+
+#file-check .update {
+    align-items: center;
+    background: #fbfbfb 0% 0% no-repeat padding-box;
+    border: 2px dashed #0950a1;
+    display: flex;
+    height: 336px;
+    justify-content: center;
+    opacity: 1;
+    position: relative;
+    width: 100%;
+}
+
+#file-check .update .placeholder {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+}
+
+#file-check .update .placeholder p {
+    color: #0950a1;
+}
+
+#file-check .update .placeholder p:first-child {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+#file-check .update .placeholder p:nth-child(3) {
+    font-size: 0.9rem;
+}
+
+#file-check .update #file-input {
+    border: none;
+    background-color: transparent;
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.table-header {
+    background-color: #0950a1;
+    color: white;
+}
+
+.table-header th {
+    font-weight: 500;
+}
+
+#documents tr:nth-child(odd) {
+    background-color: #f3f3f3;
+}
+
+#documents tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+article {
+    background-color: #f3f6fa;
+}
+
+.form-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-bottom: 32px;
+}
+
+.content {
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.icon-search {
+    fill: #0950a1;
+    height: 16px;
+    position: absolute;
+    left: 18px;
+}
+
+.input-search {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px #00000029;
+    height: 50px;
+    padding-left: 40px;
+    width: 400px;
+}
+
+.file-upload {
+    margin-top: -0.8rem;
+    display: flex;
+    justify-content: end;
+}
+
+.file-upload button {
+    background: #0950a1 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 3px 6px #00000029;
+    color: white;
+    height: 40px;
+    width: 192px;
+}
+
+.alert-error {
+    border-radius: 10px !important;
+    border: 1px solid #f9cccc !important;
+    box-shadow: 0px 3px 6px #00000029 !important;
+}
+
+.alert-success {
+    background: #c3fed3 0% 0% no-repeat padding-box !important;
+    border: 1px solid #acfcc3 !important;
+    border-radius: 10px !important;
+    box-shadow: 0px 3px 6px #00000029 !important;
+}
+
+.iziToast-texts {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+
+.iziToast-title {
+    margin-bottom: 30px !important;
+    text-align: center !important;
+}
+
+.alert-error .iziToast-message {
+    text-align: center !important;
+}
+
+.iziToast:after {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .table {
+        display: block;
+        overflow-x: auto;
+    }
+}
